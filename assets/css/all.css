@@ -5,6 +5,99 @@
     src: url(.Inter);
 }
 
+/* Reset */
+
+*,*::before,*::after{
+	box-sizing:border-box;
+}
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,
+pre,form,fieldset,input,textarea,p,blockquote,th,td,
+header,footer,aside,nav,article,figure,figcaption{
+	margin:0;
+	padding:0;
+}
+fieldset,img{
+	border:0;
+}
+address,caption,cite,code,dfn,em,strong,th,var{
+	font-style:normal;
+	font-weight:400;
+}
+ol,ul{
+	list-style:none;
+}
+caption,th{
+	text-align:left;
+}
+h1,h2,h3,h4,h5,h6{
+	font-size:100%;
+	font-weight:400;
+}
+q:before,q:after{
+	content:'';
+}
+abbr,acronym{
+	border:0;
+}
+a{
+	text-decoration:none;
+}
+a:active,a:focus{
+	outline:none;
+} 
+
+
+/* Variables */
+
+:root{
+  
+    /* Reset 1rem = 10px */
+    font-size:10px;
+    
+    /* Basic colors */
+    --white:#ffffff;
+    --black:#000000;
+    --dark-blue: #252461;
+
+  }
+/* Globals */ 
+
+body{
+    font-family:sans-serif;
+    font-size:2rem;
+    font-weight:400;
+    line-height:1.4;
+}
+  
+section{
+    padding:var(--content-padding);
+}
+  
+p,ul,figure{
+    margin-bottom:3rem;
+}
+  
+h1,h2,h3,h4,h5,h6{
+    line-height:1.1;
+}
+
+h1{
+    font-size:4rem;
+    margin-bottom:3rem;
+}
+h2{
+    font-size:3rem;
+    margin-bottom:2rem;
+    color: #7C5D1E;
+}
+h3{
+    font-size:2.5rem;
+    margin-bottom:1.5rem;
+}
+h4{
+    font-size:2.2rem;
+    font-weight:700;
+  }
 * {
     margin: 0;
     padding: 0;
@@ -45,72 +138,8 @@ img {
     display: block;
 }
 
-a {
-    color: inherit;
-    font-family: 'Inter', sans-serif;
-}
 
-a:hover,
-a:focus {
-    color: inherit;
-    text-decoration: none;
-}
-
-p {
-    margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 
-{
-    font-family: 'Inter', sans-serif;
-    margin: 0;
-    color: inherit;
-    font-weight: inherit;
-
-}
-
-h1 {
-    font-size: 60px;
-    font-family: 'Inter', sans-serif;
-}
-
-h2 {
-    font-size: 42px;
-    font-family: 'Inter', sans-serif;
-}
-
-h3 {
-    font-size: 30px;
-    font-family: 'Inter', sans-serif;
-}
-
-h4 {
-    font-size: 24px;
-    font-family: 'Inter', sans-serif;
-}
-
-h5 {
-    font-size: 18px;
-    font-family: 'Inter', sans-serif;
-}
-
-h6 {
-    font-size: 12px;
-    font-family: 'Inter', sans-serif;
-}
-
-
-span,
-a {
-    display: inline-block;
-    font-family: 'Inter', sans-serif;
-}
-
+/* Specifics */
 .main-container{
     max-width: 1110px;
     padding: 0 15px;
@@ -212,3 +241,229 @@ a {
 .banner{
     background: radial-gradient(87.22% 391.14% at 50% 50%, #dddddd 0%, rgba(138, 138, 138, 0) 100%);
 }
+.header-tabs ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+/* about-us */
+.about-main {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about{
+    padding: 40px 0px;
+}
+.about-img{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about-img span {
+    margin-left: 10px;
+    font-size: 16px;
+}
+/* neckless */
+.neckless-img{
+    width: 50%;
+}
+.neckless-img img{
+    height: 100%;
+    width: 100%;
+}
+.neckless-text{
+    text-align: center;
+    width: 50%;
+    padding: 50px  0px;
+    background: rgb(226, 226, 226) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+
+}
+.neckless-main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.neckless-div{
+    max-width: 555px;
+    margin: auto;
+}
+.beauty-img{
+    width: 50%;
+}
+.beauty-text{
+    width: 45%;
+    text-align: center;
+    color: #fff;
+}
+.beauty-text a{
+    color: #fff;
+    text-decoration: underline;
+}
+.inner-bauty{
+    background-image: url(../images/inner-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.inner-main{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* new form div */
+.email {
+    background-image: url(../images/Icon\ awesome-envelope.svg);
+    background-repeat: no-repeat;
+    padding: 15px 40px;
+    background-position: left 10px center;
+    border: none;
+}
+.button{
+    background-image: url(../images/Union\ 1.svg);
+    background-repeat: no-repeat;
+    padding: 15px 40px;
+    background-position: left 10px center;
+    border: none;
+    background-color: transparent;
+}
+.form-text {
+    border: 1px solid;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 0px 10px;
+    width: fit-content;
+    margin-top: 25px;
+}
+/* side-bar */
+.side-bar input{
+    background-image: url(../images/Icon\ ionic-ios-search.svg);
+    background-repeat: no-repeat;
+    padding: 15px 40px;
+    background-position: right 10px center;
+    width: 100%;
+}
+.side-bar{
+    width: 35%;
+    margin-top: 40px;
+}
+.side-text{
+    margin: 25px 0px;
+    padding-left: 20px;
+    border-left: 3px solid #C92035;
+}
+.checks input{
+    visibility: hidden;
+    display: none;
+}
+.checks input:checked + label{
+    background-color: #000000;
+    color: rgb(255, 255, 255);
+    padding: 10px;
+}
+.checks{
+    margin-bottom: 20px;
+}
+.checks label{
+    background-color: #E8E8E8;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+}
+.check-box form{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+.check-box {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 50%;
+}
+.side-main {
+    padding-left: 30px;
+}
+
+/* The container */
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  /* Hide the browser's default checkbox */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmark {
+    background-color: #ccc;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .container input:checked ~ .checkmark {
+    background-color: #000000;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
